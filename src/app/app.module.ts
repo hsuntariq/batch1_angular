@@ -6,12 +6,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TaskContainerComponent } from './components/task-container/task-container.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './components/form/form.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ButtonComponent,
     TaskContainerComponent,
+    FormComponent,
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
