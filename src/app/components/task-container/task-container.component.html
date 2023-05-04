@@ -1,4 +1,4 @@
-<app-form></app-form>
+<app-form (addTask)="newTask($event)"></app-form>
 <div class="p-2 my-1 d-flex align-items-center justify-content-between" *ngFor="let task of tasks">
     <div class="task"
      [ngClass]="{reminder:task.reminder}"

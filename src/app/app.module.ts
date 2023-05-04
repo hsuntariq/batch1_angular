@@ -7,6 +7,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TaskContainerComponent } from './components/task-container/task-container.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormComponent } from './components/form/form.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,8 +16,8 @@ import { FormComponent } from './components/form/form.component';
     TaskContainerComponent,
     FormComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

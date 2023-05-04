@@ -4,7 +4,7 @@
       "id": 2,
       "task": "do homeword",
       "day": "05th may 2023,Friday,",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 3,
@@ -17,6 +17,12 @@
       "task": "do laundary & wash dishes",
       "day": "04th may 2023,Thursday,",
       "reminder": false
+    },
+    {
+      "task": "testing",
+      "day": "wednesday",
+      "reminder": true,
+      "id": 5
     }
   ]
 }

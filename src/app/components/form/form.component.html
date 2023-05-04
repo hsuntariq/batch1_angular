@@ -1,15 +1,15 @@
-<form class="shadow my-3 p-2">
+<form class="shadow my-3 p-2" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="">Task</label>
-        <input type="text" name="task" class="form-control">
+        <input type="text" name="task" [(ngModel)] = "task" class="form-control">
     </div>
     <div class="form-group">
         <label for="">Day</label>
-        <input type="text" name="task" class="form-control">
+        <input type="text" name="day" [(ngModel)] = "day" class="form-control">
     </div>
     <div class="form-group">
         <label for="">Reminder</label>
-        <input type="checkbox" name="task" class="form-check-input ms-1">
+        <input type="checkbox" name="reminder" [(ngModel)] = "reminder" class="form-check-input ms-1">
     </div>
     <app-button content="Submit" color="black"></app-button>
 </form>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-
+  @Output() addTask = new EventEmitter();
+  task: String = '';
+  day: String = '';
+  reminder: boolean = false;
+  onSubmit() {
+    let formFields = {
+      task: this.task,
+      day: this.day,
+      reminder: this.reminder,
+    }
+    this.addTask.emit(formFields)
+    alert('Data Inserted Successfully')
+    this.task = ''
+    this.day = ''
+    this.reminder = false;
+  }
 }
